@@ -1,0 +1,2 @@
+# loginViewController
+结合了实习僧和今日头条APP的登录动画效果，同时整合了一些不同状态下的登录情况界面，详细可参考GIF和demon
