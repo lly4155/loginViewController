@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7322D2861EF0BE83002601D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2851EF0BE83002601D5 /* main.m */; };
+		7322D2891EF0BE83002601D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2881EF0BE83002601D5 /* AppDelegate.m */; };
+		7322D28C1EF0BE83002601D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D28B1EF0BE83002601D5 /* ViewController.m */; };
+		7322D28F1EF0BE83002601D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7322D28D1EF0BE83002601D5 /* Main.storyboard */; };
+		7322D2911EF0BE83002601D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7322D2901EF0BE83002601D5 /* Assets.xcassets */; };
+		7322D2941EF0BE83002601D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7322D2921EF0BE83002601D5 /* LaunchScreen.storyboard */; };
+		7322D29F1EF0BE83002601D5 /* loginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D29E1EF0BE83002601D5 /* loginViewControllerTests.m */; };
+		7322D2AA1EF0BE83002601D5 /* loginViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2A91EF0BE83002601D5 /* loginViewControllerUITests.m */; };
+		7322D2BA1EF0BE9B002601D5 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2B81EF0BE9B002601D5 /* loginViewController.m */; };
+		7322D2BB1EF0BE9B002601D5 /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7322D2B91EF0BE9B002601D5 /* loginViewController.xib */; };
+		7322D2BF1EF0C05B002601D5 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2BE1EF0C05B002601D5 /* DeformationButton.m */; };
+		7322D2C71EF0C07F002601D5 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2C41EF0C07F002601D5 /* FBShimmeringLayer.m */; };
+		7322D2C81EF0C07F002601D5 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2C61EF0C07F002601D5 /* FBShimmeringView.m */; };
+		7322D2CB1EF0C123002601D5 /* WeakTimerTargetObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2CA1EF0C123002601D5 /* WeakTimerTargetObj.m */; };
+		7322D2D61EF0C15D002601D5 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2CE1EF0C15D002601D5 /* SVIndefiniteAnimatedView.m */; };
+		7322D2D71EF0C15D002601D5 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2D01EF0C15D002601D5 /* SVProgressAnimatedView.m */; };
+		7322D2D81EF0C15D002601D5 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7322D2D11EF0C15D002601D5 /* SVProgressHUD.bundle */; };
+		7322D2D91EF0C15D002601D5 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2D31EF0C15D002601D5 /* SVProgressHUD.m */; };
+		7322D2DA1EF0C15D002601D5 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2D51EF0C15D002601D5 /* SVRadialGradientLayer.m */; };
+		7322D2DD1EF0C94E002601D5 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7322D2DC1EF0C94E002601D5 /* MMMaterialDesignSpinner.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7322D29B1EF0BE83002601D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7322D2791EF0BE83002601D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7322D2801EF0BE83002601D5;
+			remoteInfo = loginViewController;
+		};
+		7322D2A61EF0BE83002601D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7322D2791EF0BE83002601D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7322D2801EF0BE83002601D5;
+			remoteInfo = loginViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7322D2811EF0BE83002601D5 /* loginViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7322D2851EF0BE83002601D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7322D2871EF0BE83002601D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7322D2881EF0BE83002601D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7322D28A1EF0BE83002601D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7322D28B1EF0BE83002601D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7322D28E1EF0BE83002601D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7322D2901EF0BE83002601D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7322D2931EF0BE83002601D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7322D2951EF0BE83002601D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7322D29A1EF0BE83002601D5 /* loginViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7322D29E1EF0BE83002601D5 /* loginViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginViewControllerTests.m; sourceTree = "<group>"; };
+		7322D2A01EF0BE83002601D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7322D2A51EF0BE83002601D5 /* loginViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7322D2A91EF0BE83002601D5 /* loginViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginViewControllerUITests.m; sourceTree = "<group>"; };
+		7322D2AB1EF0BE83002601D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7322D2B71EF0BE9B002601D5 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		7322D2B81EF0BE9B002601D5 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		7322D2B91EF0BE9B002601D5 /* loginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
+		7322D2BD1EF0C05B002601D5 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		7322D2BE1EF0C05B002601D5 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		7322D2C11EF0C07F002601D5 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		7322D2C21EF0C07F002601D5 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		7322D2C31EF0C07F002601D5 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		7322D2C41EF0C07F002601D5 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		7322D2C51EF0C07F002601D5 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		7322D2C61EF0C07F002601D5 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		7322D2C91EF0C123002601D5 /* WeakTimerTargetObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakTimerTargetObj.h; sourceTree = "<group>"; };
+		7322D2CA1EF0C123002601D5 /* WeakTimerTargetObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakTimerTargetObj.m; sourceTree = "<group>"; };
+		7322D2CD1EF0C15D002601D5 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		7322D2CE1EF0C15D002601D5 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		7322D2CF1EF0C15D002601D5 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		7322D2D01EF0C15D002601D5 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		7322D2D11EF0C15D002601D5 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		7322D2D21EF0C15D002601D5 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		7322D2D31EF0C15D002601D5 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		7322D2D41EF0C15D002601D5 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		7322D2D51EF0C15D002601D5 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		7322D2DB1EF0C94E002601D5 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		7322D2DC1EF0C94E002601D5 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7322D27E1EF0BE83002601D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7322D2971EF0BE83002601D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7322D2A21EF0BE83002601D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7322D2781EF0BE83002601D5 = {
+			isa = PBXGroup;
+			children = (
+				7322D2831EF0BE83002601D5 /* loginViewController */,
+				7322D29D1EF0BE83002601D5 /* loginViewControllerTests */,
+				7322D2A81EF0BE83002601D5 /* loginViewControllerUITests */,
+				7322D2821EF0BE83002601D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7322D2821EF0BE83002601D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2811EF0BE83002601D5 /* loginViewController.app */,
+				7322D29A1EF0BE83002601D5 /* loginViewControllerTests.xctest */,
+				7322D2A51EF0BE83002601D5 /* loginViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7322D2831EF0BE83002601D5 /* loginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2BC1EF0BFEC002601D5 /* other */,
+				7322D2871EF0BE83002601D5 /* AppDelegate.h */,
+				7322D2881EF0BE83002601D5 /* AppDelegate.m */,
+				7322D28A1EF0BE83002601D5 /* ViewController.h */,
+				7322D28B1EF0BE83002601D5 /* ViewController.m */,
+				7322D2B71EF0BE9B002601D5 /* loginViewController.h */,
+				7322D2B81EF0BE9B002601D5 /* loginViewController.m */,
+				7322D2B91EF0BE9B002601D5 /* loginViewController.xib */,
+				7322D28D1EF0BE83002601D5 /* Main.storyboard */,
+				7322D2901EF0BE83002601D5 /* Assets.xcassets */,
+				7322D2921EF0BE83002601D5 /* LaunchScreen.storyboard */,
+				7322D2951EF0BE83002601D5 /* Info.plist */,
+				7322D2841EF0BE83002601D5 /* Supporting Files */,
+			);
+			path = loginViewController;
+			sourceTree = "<group>";
+		};
+		7322D2841EF0BE83002601D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2851EF0BE83002601D5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7322D29D1EF0BE83002601D5 /* loginViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7322D29E1EF0BE83002601D5 /* loginViewControllerTests.m */,
+				7322D2A01EF0BE83002601D5 /* Info.plist */,
+			);
+			path = loginViewControllerTests;
+			sourceTree = "<group>";
+		};
+		7322D2A81EF0BE83002601D5 /* loginViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2A91EF0BE83002601D5 /* loginViewControllerUITests.m */,
+				7322D2AB1EF0BE83002601D5 /* Info.plist */,
+			);
+			path = loginViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		7322D2BC1EF0BFEC002601D5 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2CC1EF0C15D002601D5 /* SVProgressHUD */,
+				7322D2C01EF0C07F002601D5 /* FBShimmering */,
+				7322D2C91EF0C123002601D5 /* WeakTimerTargetObj.h */,
+				7322D2CA1EF0C123002601D5 /* WeakTimerTargetObj.m */,
+				7322D2BD1EF0C05B002601D5 /* DeformationButton.h */,
+				7322D2BE1EF0C05B002601D5 /* DeformationButton.m */,
+				7322D2DB1EF0C94E002601D5 /* MMMaterialDesignSpinner.h */,
+				7322D2DC1EF0C94E002601D5 /* MMMaterialDesignSpinner.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		7322D2C01EF0C07F002601D5 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2C11EF0C07F002601D5 /* FBShimmering-Prefix.pch */,
+				7322D2C21EF0C07F002601D5 /* FBShimmering.h */,
+				7322D2C31EF0C07F002601D5 /* FBShimmeringLayer.h */,
+				7322D2C41EF0C07F002601D5 /* FBShimmeringLayer.m */,
+				7322D2C51EF0C07F002601D5 /* FBShimmeringView.h */,
+				7322D2C61EF0C07F002601D5 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		7322D2CC1EF0C15D002601D5 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7322D2CD1EF0C15D002601D5 /* SVIndefiniteAnimatedView.h */,
+				7322D2CE1EF0C15D002601D5 /* SVIndefiniteAnimatedView.m */,
+				7322D2CF1EF0C15D002601D5 /* SVProgressAnimatedView.h */,
+				7322D2D01EF0C15D002601D5 /* SVProgressAnimatedView.m */,
+				7322D2D11EF0C15D002601D5 /* SVProgressHUD.bundle */,
+				7322D2D21EF0C15D002601D5 /* SVProgressHUD.h */,
+				7322D2D31EF0C15D002601D5 /* SVProgressHUD.m */,
+				7322D2D41EF0C15D002601D5 /* SVRadialGradientLayer.h */,
+				7322D2D51EF0C15D002601D5 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7322D2801EF0BE83002601D5 /* loginViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7322D2AE1EF0BE83002601D5 /* Build configuration list for PBXNativeTarget "loginViewController" */;
+			buildPhases = (
+				7322D27D1EF0BE83002601D5 /* Sources */,
+				7322D27E1EF0BE83002601D5 /* Frameworks */,
+				7322D27F1EF0BE83002601D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = loginViewController;
+			productName = loginViewController;
+			productReference = 7322D2811EF0BE83002601D5 /* loginViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7322D2991EF0BE83002601D5 /* loginViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7322D2B11EF0BE83002601D5 /* Build configuration list for PBXNativeTarget "loginViewControllerTests" */;
+			buildPhases = (
+				7322D2961EF0BE83002601D5 /* Sources */,
+				7322D2971EF0BE83002601D5 /* Frameworks */,
+				7322D2981EF0BE83002601D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7322D29C1EF0BE83002601D5 /* PBXTargetDependency */,
+			);
+			name = loginViewControllerTests;
+			productName = loginViewControllerTests;
+			productReference = 7322D29A1EF0BE83002601D5 /* loginViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7322D2A41EF0BE83002601D5 /* loginViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7322D2B41EF0BE83002601D5 /* Build configuration list for PBXNativeTarget "loginViewControllerUITests" */;
+			buildPhases = (
+				7322D2A11EF0BE83002601D5 /* Sources */,
+				7322D2A21EF0BE83002601D5 /* Frameworks */,
+				7322D2A31EF0BE83002601D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7322D2A71EF0BE83002601D5 /* PBXTargetDependency */,
+			);
+			name = loginViewControllerUITests;
+			productName = loginViewControllerUITests;
+			productReference = 7322D2A51EF0BE83002601D5 /* loginViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7322D2791EF0BE83002601D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = lly;
+				TargetAttributes = {
+					7322D2801EF0BE83002601D5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					7322D2991EF0BE83002601D5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7322D2801EF0BE83002601D5;
+					};
+					7322D2A41EF0BE83002601D5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7322D2801EF0BE83002601D5;
+					};
+				};
+			};
+			buildConfigurationList = 7322D27C1EF0BE83002601D5 /* Build configuration list for PBXProject "loginViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7322D2781EF0BE83002601D5;
+			productRefGroup = 7322D2821EF0BE83002601D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7322D2801EF0BE83002601D5 /* loginViewController */,
+				7322D2991EF0BE83002601D5 /* loginViewControllerTests */,
+				7322D2A41EF0BE83002601D5 /* loginViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7322D27F1EF0BE83002601D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7322D2D81EF0C15D002601D5 /* SVProgressHUD.bundle in Resources */,
+				7322D2BB1EF0BE9B002601D5 /* loginViewController.xib in Resources */,
+				7322D2941EF0BE83002601D5 /* LaunchScreen.storyboard in Resources */,
+				7322D2911EF0BE83002601D5 /* Assets.xcassets in Resources */,
+				7322D28F1EF0BE83002601D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7322D2981EF0BE83002601D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7322D2A31EF0BE83002601D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7322D27D1EF0BE83002601D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7322D2C71EF0C07F002601D5 /* FBShimmeringLayer.m in Sources */,
+				7322D2D71EF0C15D002601D5 /* SVProgressAnimatedView.m in Sources */,
+				7322D2BA1EF0BE9B002601D5 /* loginViewController.m in Sources */,
+				7322D2D61EF0C15D002601D5 /* SVIndefiniteAnimatedView.m in Sources */,
+				7322D2CB1EF0C123002601D5 /* WeakTimerTargetObj.m in Sources */,
+				7322D2DD1EF0C94E002601D5 /* MMMaterialDesignSpinner.m in Sources */,
+				7322D28C1EF0BE83002601D5 /* ViewController.m in Sources */,
+				7322D2C81EF0C07F002601D5 /* FBShimmeringView.m in Sources */,
+				7322D2DA1EF0C15D002601D5 /* SVRadialGradientLayer.m in Sources */,
+				7322D2891EF0BE83002601D5 /* AppDelegate.m in Sources */,
+				7322D2861EF0BE83002601D5 /* main.m in Sources */,
+				7322D2D91EF0C15D002601D5 /* SVProgressHUD.m in Sources */,
+				7322D2BF1EF0C05B002601D5 /* DeformationButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7322D2961EF0BE83002601D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7322D29F1EF0BE83002601D5 /* loginViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7322D2A11EF0BE83002601D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7322D2AA1EF0BE83002601D5 /* loginViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7322D29C1EF0BE83002601D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7322D2801EF0BE83002601D5 /* loginViewController */;
+			targetProxy = 7322D29B1EF0BE83002601D5 /* PBXContainerItemProxy */;
+		};
+		7322D2A71EF0BE83002601D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7322D2801EF0BE83002601D5 /* loginViewController */;
+			targetProxy = 7322D2A61EF0BE83002601D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7322D28D1EF0BE83002601D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7322D28E1EF0BE83002601D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7322D2921EF0BE83002601D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7322D2931EF0BE83002601D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7322D2AC1EF0BE83002601D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7322D2AD1EF0BE83002601D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7322D2AF1EF0BE83002601D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = loginViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.loginViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7322D2B01EF0BE83002601D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = loginViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.loginViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7322D2B21EF0BE83002601D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = loginViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.loginViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loginViewController.app/loginViewController";
+			};
+			name = Debug;
+		};
+		7322D2B31EF0BE83002601D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = loginViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.loginViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/loginViewController.app/loginViewController";
+			};
+			name = Release;
+		};
+		7322D2B51EF0BE83002601D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = loginViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.loginViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = loginViewController;
+			};
+			name = Debug;
+		};
+		7322D2B61EF0BE83002601D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = loginViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lly.loginViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = loginViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7322D27C1EF0BE83002601D5 /* Build configuration list for PBXProject "loginViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7322D2AC1EF0BE83002601D5 /* Debug */,
+				7322D2AD1EF0BE83002601D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7322D2AE1EF0BE83002601D5 /* Build configuration list for PBXNativeTarget "loginViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7322D2AF1EF0BE83002601D5 /* Debug */,
+				7322D2B01EF0BE83002601D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7322D2B11EF0BE83002601D5 /* Build configuration list for PBXNativeTarget "loginViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7322D2B21EF0BE83002601D5 /* Debug */,
+				7322D2B31EF0BE83002601D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7322D2B41EF0BE83002601D5 /* Build configuration list for PBXNativeTarget "loginViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7322D2B51EF0BE83002601D5 /* Debug */,
+				7322D2B61EF0BE83002601D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7322D2791EF0BE83002601D5 /* Project object */;
+}

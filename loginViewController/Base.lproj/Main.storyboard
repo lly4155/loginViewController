@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebu-cO-526">
+                                <rect key="frame" x="171.5" y="119" width="31" height="30"/>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvg-BX-tRH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K7-Eo-1MC">
+                                <rect key="frame" x="171.5" y="238" width="31" height="30"/>
+                                <state key="normal" title="注册"/>
+                                <connections>
+                                    <action selector="regist:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Dg-0P-VYQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eal-dt-9uD">
+                                <rect key="frame" x="156" y="377" width="62" height="30"/>
+                                <state key="normal" title="修改密码"/>
+                                <connections>
+                                    <action selector="changePwd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3j7-C7-a7u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请不要在点击修改密码后再点击登录和注册，这里的UI我没有做相应判断，因为在逻辑上这样的顺序是不会出现的。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikP-Lu-3zJ">
+                                <rect key="frame" x="89" y="432" width="196" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="8zi-Wp-UfI"/>
+                                    <constraint firstAttribute="height" constant="71" id="RyD-IL-q6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ebu-cO-526" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="99" id="2MT-ar-Zsy"/>
+                            <constraint firstItem="Ebu-cO-526" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ixm-Sa-f4f"/>
+                            <constraint firstItem="Eal-dt-9uD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fDk-59-ZnA"/>
+                            <constraint firstItem="ikP-Lu-3zJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gNi-ir-C4y"/>
+                            <constraint firstItem="2K7-Eo-1MC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h5C-GX-ztP"/>
+                            <constraint firstItem="2K7-Eo-1MC" firstAttribute="top" secondItem="Ebu-cO-526" secondAttribute="bottom" constant="89" id="pSl-xk-1lU"/>
+                            <constraint firstItem="Eal-dt-9uD" firstAttribute="top" secondItem="2K7-Eo-1MC" secondAttribute="bottom" constant="109" id="r2I-C4-ASW"/>
+                            <constraint firstItem="ikP-Lu-3zJ" firstAttribute="top" secondItem="Eal-dt-9uD" secondAttribute="bottom" constant="25" id="tDO-zG-jf5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
