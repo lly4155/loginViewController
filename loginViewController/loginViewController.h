@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 typedef enum{
-    logModel = 0,
-    registModel = 1,
-    forgetModel  = 2,
-    changeModel = 3,
+    logModel,
+    registModel,
+    forgetModel,
+    changeModel,
 }loginModel;
 
 @interface loginViewController : UIViewController
