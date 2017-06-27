@@ -100,7 +100,7 @@ BOOL isAppear;
 }
 
 //弹出登录控制器
--(void)showInWindowViewNeedAnimated:(BOOL)animated needSuperController:(UIViewController *)superVC{
+-(void)showAndSuperController:(UIViewController *)superVC{
     UIView *aView = [UIApplication sharedApplication].keyWindow;
     self.superVC = superVC;
     self.view.frame = CGRectMake(0, kScreenHeight, kScreenWidth, kScreenHeight - viewHeightOffset);
@@ -111,9 +111,7 @@ BOOL isAppear;
     [aView addSubview: maskBtn];
     self.maskBtn = maskBtn;
     [aView addSubview: self.view];
-    if (animated) {
-        [self showAnimation];
-    }
+    [self showAnimation];
 }
 //父控制器的收缩动画
 - (void) showAnimation {
@@ -229,7 +227,7 @@ BOOL isAppear;
  发送验证码
  */
 -(void)sendSMS{
-    //发送验证码代码填写处
+    #warning needTODO:发送验证码代码填写处
     [SVProgressHUD showSuccessWithStatus:@"发送成功"];
 }
 
@@ -244,7 +242,7 @@ BOOL isAppear;
     //其他按钮的交互取消
     [self userInteractionIsAllow:NO];
     [self startLoading:sender];
-    //延时执行点击后操作，为确保动画完成
+    //延时执行点击后操作，为确保动画完成一点样子，不需要的话，可以直接执行方法
     [self performSelector:@selector(loginOperation) withObject:nil afterDelay:1.2];
     
 }

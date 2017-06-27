@@ -17,7 +17,7 @@ typedef enum{
 
 @interface loginViewController : UIViewController
 
--(void)showInWindowViewNeedAnimated:(BOOL)animated needSuperController:(UIViewController *)superVC;
+-(void)showAndSuperController:(UIViewController *)superVC;
 + (instancetype)sharedLoginViewWithModel:(loginModel)model;
 
 @property (weak, nonatomic) IBOutlet UIButton *weboIcon;

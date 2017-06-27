@@ -21,14 +21,14 @@
 }
 
 - (IBAction)login:(id)sender {
-    [[loginViewController sharedLoginViewWithModel:logModel]showInWindowViewNeedAnimated:YES needSuperController:self];
+    [[loginViewController sharedLoginViewWithModel:logModel]showAndSuperController:self];
 }
 
 - (IBAction)regist:(id)sender {
-    [[loginViewController sharedLoginViewWithModel:registModel]showInWindowViewNeedAnimated:YES needSuperController:self];
+    [[loginViewController sharedLoginViewWithModel:registModel]showAndSuperController:self];
 }
 
 - (IBAction)changePwd:(id)sender {
-    [[loginViewController sharedLoginViewWithModel:changeModel]showInWindowViewNeedAnimated:YES needSuperController:self];
+    [[loginViewController sharedLoginViewWithModel:changeModel]showAndSuperController:self];
 }
 @end
