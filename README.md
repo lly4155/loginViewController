@@ -36,7 +36,7 @@ usage：
 
 1、在需要登录功能的控制器中导入  #import "loginViewController.h"
 
-2、在需要弹出登录界面的地方调用 [[loginViewController sharedLoginViewWithModel:你想显示的模式]showInWindowViewNeedAnimated:YES needSuperController:self];
+2、在需要弹出登录界面的地方调用 [[loginViewController sharedLoginViewWithModel:你想显示的模式]showAndSuperController:self];
 
 3、大功告成，所有内部操作都不要外界关心，内部的逻辑大部分也写好了，例如手机号的正则检测，发送验证码的倒计时效果，不同状态下同一个textfield的键盘类型，输入文字是否加密，placeHolder，内容清除type等繁琐步骤都设置好了，如果有遗漏欢迎指出。
 
@@ -52,5 +52,6 @@ usage：
 
 4、因个人项目没有用到其他方式注册或登录，比如邮箱注册等，还会涉及到邮箱发确认邮件等功能，所以有需要的还是要自己做修改。
 
+5、目前有发现在iOS9.3.2系统下，点击手机注册后，UIview动画执行完后又回到之前的位置bug，目前还没查找出本质原因，如果有这种现象，先确认下是否是版本问题。
 
 ^. ^ 觉得好用就给个星星吧，哪里不好用也麻烦给我issue，欢迎大牛指点
