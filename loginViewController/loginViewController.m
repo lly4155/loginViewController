@@ -51,23 +51,32 @@ BOOL isAppear;
     return _instance;
 }
 
-//的在SB布局后才能改变视图结构，不然会被SB改回去
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    if (self.currentModel == logModel) {
-        self.phoneNum.text = [TheUserDefaults objectForKey:kAccount];//记住账号名
+//的在XIB布局后才能改变视图结构，不然会被XIB改回去
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    if (self.currentModel == logModel) {//记住账号名
+        self.phoneNum.text = [TheUserDefaults objectForKey:kAccount];
     }
     [self changeModelHidden];
+    [self recover];
+}
+
+//重置背景位置和定时器
+-(void)recover{
     isAppear = YES;
+    //启动需要时间，应设置比动画时间长，否则有可能会图像越界
+    self.timer = [WeakTimerTargetObj scheduledTimerWithTimeInterval:16 target:self selector:@selector(scrollScrollViewIsRecover:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    [self scrollScrollViewIsRecover:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.oldModel = logModel;
+    self.view.layer.cornerRadius = 10;
     self.backScrollView.contentSize = CGSizeMake(3500, kScreenHeight);
     self.backScrollView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backColor"]];
     self.backScrollView.scrollEnabled = NO;
-    self.view.layer.cornerRadius = 10;
     
     self.phoneNum.delegate = self;
     self.pwdAndAuth.delegate = self;
@@ -92,11 +101,7 @@ BOOL isAppear;
     shimmeringView.contentView = logoView;
     // Start shimmering.
     shimmeringView.shimmering = YES;
-    //启动需要时间，应设置比动画时间长，否则有可能会图像越界
-    isAppear = YES;
-    self.timer = [WeakTimerTargetObj scheduledTimerWithTimeInterval:16 target:self selector:@selector(scrollScrollView) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
-    [self scrollScrollView];
+    
 }
 
 //弹出登录控制器
@@ -122,14 +127,19 @@ BOOL isAppear;
 }
 
 #pragma mark -- 背景平移动画
-- (void)scrollScrollView
+- (void)scrollScrollViewIsRecover:(BOOL)isRecover
 {
     if (isAppear == NO) {
         return;
     }
-    //YES代表向右
     static BOOL direction = YES;
+    if (isRecover) {
+        direction = YES;
+        self.backScrollView.contentOffset = CGPointMake(0, 0);
+    }
+    //YES代表向右
     CGPoint newScrollViewContentOffset = self.backScrollView.contentOffset;
+
     //一次移动多少个单位
     CGFloat dist = 3000;
     
@@ -151,7 +161,11 @@ BOOL isAppear;
     [self.phoneNum resignFirstResponder];
     [self.pwdAndAuth resignFirstResponder];
     [self.registPwd resignFirstResponder];
+    //销毁定时器
+    [self.timer invalidate];
+    self.timer = nil;
     isAppear = NO;
+    
     self.phoneNum.text = @"";
     self.pwdAndAuth.text = @"";
     self.registPwd.text = @"";
