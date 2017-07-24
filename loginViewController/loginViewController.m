@@ -248,7 +248,7 @@ BOOL isAppear;
 //验证验证码
 -(void)verifySMS{
     #warning needTODO:第三方短信验证代码，以及验证通过后与自己服务器网络对接
-    
+    #warning needTODO:如果第三方验证失败或者错误，需要调用[self showLogin:self.login];否则按钮不会停止动画
 }
 
 //登录
@@ -291,16 +291,22 @@ BOOL isAppear;
             return;
         }
         #warning needTODO:对接服务器，进行登录操作
-        
+        #warning needTODO:在网络操作中，如果没有网络，即收到服务器的数据为nil，需要做空判断以防崩溃，同时回收按钮动画，例如下面代码，obj为服务器返回的二进制数据
+        /*
+         if (obj==nil) {
+         [SVProgressHUD showErrorWithStatus:@"网络异常,请重试"];
+         [self showLogin:self.login];//回收动画，回到原型
+         return;
+         }
+         */
     }else{
         //忘记密码模式
         if([self phoneNumCheck]) { //有效手机号
             [self verifySMS];
-            [self showLogin:self.login];
         }else {
             [SVProgressHUD showInfoWithStatus:@"手机号不正确"];
-            [self showLogin:self.login];
         }
+        [self showLogin:self.login];
     }
 }
 
