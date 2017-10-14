@@ -26,13 +26,17 @@
 }
 
 - (void)initBtn{
-    self.forDisplayButton = [[UIButton alloc]initWithFrame:self.bounds];
+    self.forDisplayButton = [[UIButton alloc]initWithFrame:CGRectZero];
     self.forDisplayButton.userInteractionEnabled = NO;
     self.forDisplayButton.layer.cornerRadius = 10;
     self.forDisplayButton.layer.masksToBounds = YES;
     self.forDisplayButton.layer.borderColor = [UIColor whiteColor].CGColor;
     self.forDisplayButton.layer.borderWidth = 1;
     [self addSubview:self.forDisplayButton];
+}
+
+- (void)layoutSubviews{
+    self.forDisplayButton.frame = self.bounds;
 }
 
 -(CGRect)frame{
